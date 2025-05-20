@@ -1,0 +1,204 @@
+.custom-navbar {
+  background: linear-gradient(90deg, #3b2d74, #8e44ad);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+/* registration page
+ */
+ .register-page {
+  height: 100vh;
+  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+input.form-control {
+  border-radius: 10px;
+}
+
+button.btn-primary {
+  background-color: #3a1c71;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #5f2c82;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* login css */
+.login-page {
+  height: 100vh;
+  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+input.form-control {
+  border-radius: 10px;
+}
+
+button.btn-primary {
+  background-color: #3a1c71;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #5f2c82;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Admin Dashboard css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(to right, #3a1c71, #d76d77);
+  color: #fff;
+  transition: width 0.3s;
+  overflow-x: hidden;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar .toggle-btn {
+  padding: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-menu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu li a{
+  margin-left: 10px;
+  display: inline-block;
+  transition: opacity 0.3s;
+  color: White;
+  text-decoration: none;
+}
+
+.sidebar.collapsed .sidebar-menu li span {
+  opacity: 0;
+}
+
+.topbar {
+  height: 60px;
+  background: #3a1c71;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  background: #f8f9fa;
+  height: 100%;
+  overflow-y: auto;
+}
+/* User Mgmt */
+.bg-gradient {
+  background: linear-gradient(to right, #3a1c71, #d76d77);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+/* tourist place management */
+.bg-gradient {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* card css */
+.custom-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
