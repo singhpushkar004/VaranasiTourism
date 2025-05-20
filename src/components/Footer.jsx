@@ -35,7 +35,7 @@ const Footer = () => {
             <h4 className="text-white mb-3">Contact</h4>
             <p className="mb-2">
                 <i className="fa fa-map-marker-alt me-3" />
-                123 Street, Lucknow, UP
+                1/38 Janipuram , Lucknow, UP
             </p>
             <p className="mb-2">
                 <i className="fa fa-phone-alt me-3" />
